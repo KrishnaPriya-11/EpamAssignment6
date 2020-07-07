@@ -8,8 +8,7 @@ class ListCustom<E> {
     }
     public void add(E e) {
            if (size == elementData.length) {
-                  ensureCapacity(); // increase current capacity of list, make it
-                                                    // double.
+                  ensureCapacity(); 
            }
            elementData[size++] = e;
     }
@@ -19,7 +18,7 @@ class ListCustom<E> {
                   throw new IndexOutOfBoundsException("Index: " + index + ", Size "
                                + index);
            }
-           return (E) elementData[index]; // return value on index.
+           return (E) elementData[index];
     }
     public Object remove(int index) {
         if (index < 0 || index >= size) {
